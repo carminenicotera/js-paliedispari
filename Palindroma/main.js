@@ -11,4 +11,12 @@ function reversedWord (word) {
   return reversedWord;
 }
 
-
+//funzione che verifica se la parola inserita è palindroma e restituisce un booleano
+function isPalindroma (word, wordReverted) {
+  for (let i = 0; i < word.length ; i++) {
+    if (word[i] !== wordReverted[i]) {
+      return false;
+    }
+  }
+  return true;
+}
