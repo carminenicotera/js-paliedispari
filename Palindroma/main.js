@@ -20,3 +20,11 @@ function isPalindroma (word, wordReverted) {
   }
   return true;
 }
+
+//assegno alla variabile il valore di ritorno della funzione reverseWord
+const revWord = reversedWord(word);
+console.log(revWord);
+
+//assegno alla variabile il valore di ritorno della funzione isPalindroma e verifico se la parola inserita è palindroma
+const verify = isPalindroma(word, revWord);
+verify ? console.log('La parola inserita è palindroma!') : console.log('La parola inserita non è palindroma!');
