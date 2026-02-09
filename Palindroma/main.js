@@ -8,5 +8,7 @@ function reversedWord (word) {
     const char = word[i];
     reversedWord += char;
   }
-  console.log(reversedWord);
+  return reversedWord;
 }
+
+
